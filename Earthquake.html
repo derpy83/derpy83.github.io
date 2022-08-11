@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../Assignment2/style/style.css">
+</head>
+<body>
+    <div class="BG3">
+        <div class="navbar">
+            <ul>
+                <li><a href="../Assignment2/Index.html">Home</a></li>
+                <li><a href="../Assignment2/Tsunami.html">Tsunami</a></li>
+                <li><a href="../Assignment2/Earthquake.html">Earthquake</a></li>
+                <li><a href="../Assignment2/Apocalypse.html">Apocalypse</a></li>
+            </ul>
+        </div>
+        
+        <div class="box Content">
+            <button type="button" class="collapsible">What is a Earthquake?</button>
+            <div class="content">
+                <p>
+                    An earthquake is caused by a sudden slip on a fault. The tectonic plates are always slowly moving,<br>
+                    but they get stuck at their edges due to friction. When the stress on the edge overcomes the friction,<br> 
+                    there is an earthquake that releases energy in waves that travel through the earth's crust and <br>
+                    cause the shaking that we feel.
+                </p>
+            </div>
+            <button type="button" class="collapsible">What causes Earthquake?</button>
+            <div class="content">
+                <p>
+                    An earthquake is caused by a sudden slip on a fault. The tectonic plates are always slowly moving,<br>
+                    but they get stuck at their edges due to friction. When the stress on the edge overcomes the friction, <br>
+                    there is an earthquake that releases energy in waves that travel through the earth's crust and cause the shaking that we feel.
+                </p>
+            </div>
+            <button type="button" class="collapsible">What to do before an Earthquake</button>
+            <div class="content">
+                <ul>
+                    <li>Make sure you have a fire extinguisher, first aid kit, a battery-powered radio, a flashlight, and extra batteries at home. </li><br> 
+                    <li>Learn first aid.</li><br> 
+                    <li>Learn how to turn off the gas, water, and electricity.</li><br> 
+                    <li>Make up a plan of where to meet your family after an earthquake.</li><br> 
+                    <li>Don't leave heavy objects on shelves (they'll fall during a quake).</li><br> 
+                    <li>Anchor heavy furniture, cupboards, and appliances to the walls or floor.</li><br>
+                    <li>Learn the earthquake plan at your school or workplace.</li>
+                  </ul>
+            </div>
+            <button type="button" class="collapsible">What to do during an Earthquake</button>
+            <div class="content">
+                <p>
+                    1. Stay calm! If you're indoors, stay inside. If you're outside, stay outside.<br>
+                    2. If you're indoors, stand against a wall near the center of the building, stand in a doorway, or crawl under heavy furniture (a desk or table). Stay away from windows and outside doors.<br>
+                    3. If you're outdoors, stay in the open away from power lines or anything that might fall. Stay away from buildings (stuff might fall off the building or the building could fall on you).<br>
+                    4. Don't use matches, candles, or any flame. Broken gas lines and fire don't mix.<br>
+                    5. If you're in a car, stop the car and stay inside the car until the earthquake stops.<br>
+                    6. Don't use elevators (they may shut down).
+                </p>
+            </div>
+            <button type="button" class="collapsible">What to do after an Earthquake</button>
+            <div class="content">
+                <p>
+                    
+                   1. Check yourself and others for injuries. Provide first aid for anyone who needs it.<br>
+                   2. Check water, gas, and electric lines for damage. If any are damaged, shut off the valves. Check for the smell of gas. If you smell it, open all the windows and doors, leave immediately, and report it to the authorities (use someone else's phone).<br>
+                   3. Turn on the radio. Don't use the phone unless it's an emergency.<br>
+                   4. Stay out of damaged buildings.<br>
+                   5. Be careful around broken glass and debris. Wear boots or sturdy shoes to keep from cutting your feet.<br>
+                   6. Be careful of chimneys (they may fall on you).<br>
+                   7. Stay away from beaches. Tsunamis and seiches sometimes hit after the ground has stopped shaking.<br>
+                   8. Stay away from damaged areas.<br>
+                   9. If you're at school or work, follow the emergency plan or the instructions of the person in charge.
+                   Expect aftershocks.
+
+                </p>
+            </div>
+        </div>
+
+    </div>
+
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>

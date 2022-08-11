@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../Assignment2/style/style.css">
+</head>
+<body>
+    <div class="BG2">
+        <div class="navbar">
+            <ul>
+                <li><a href="../Assignment2/Index.html">Home</a></li>
+                <li><a href="../Assignment2/Tsunami.html">Tsunami</a></li>
+                <li><a href="../Assignment2/Earthquake.html">Earthquake</a></li>
+                <li><a href="../Assignment2/Apocalypse.html">Apocalypse</a></li>
+            </ul>
+        </div>
+        <div class="box Content">
+            <button type="button" class="collapsible">What is a Tsunami?</button>
+            <div class="content">
+                <p>Tsunamis are giant waves caused by earthquakes or volcanic eruptions under the sea.<br> 
+                    Out in the depths of the ocean, tsunami waves do not dramatically increase in height. <br>
+                    But as the waves travel inland, they build up to higher and higher heights as the depth of the ocean decreases.<br>  
+                    The speed of tsunami waves depends on ocean depth rather than the distance from the source of the wave. <br>
+                    Tsunami waves may travel as fast as jet planes over deep waters, only slowing down when reaching shallow waters.<br>  
+                    While tsunamis are often referred to as tidal waves,
+                    this name is discouraged by oceanographers because tides have little to do with these giant waves.
+                </p>
+            </div>
+            <button type="button" class="collapsible">What to do Before a tsunami occurs.</button>
+            <div class="content">
+                <ul>
+                    <li>Establish whether your home and other places you frequent are in tsunami hazard areas.</li><br> 
+                    <li>Know how high above sea level your street is and how far it is from the coast. Evacuation orders may be based on those figures.</li><br> 
+                    <li>Cobble together an emergency supplies kit.</li><br> 
+                    <li>Plan your escape and evacuation routes.</li><br> 
+                    <li>Practice evacuating.</li><br> 
+                    <li>Know your children's school evacuation plans and figure out how to get them.</li>
+                  </ul>
+            </div>
+            <button type="button" class="collapsible">What to do When a tsunami occurs</button>
+            <div class="content">
+                <p>
+                    1. If there's an earthquake while you are on the coast and indoors, drop, cover and hold on. If you're outside, stay away from falling objects.<br> 
+                    2. When the shaking is over, move quickly to inland, higher ground. Go on foot if you can. Stay there until officials say it's all clear.<br> 
+                    3. Bring your animals if you evacuate. Bring your preparedness kit.<br> 
+                    4. Listen to official sources such as a National Oceanic and Atmospheric Administration weather radio or the U.S.<br>
+                    5. Coast Guard emergency frequency station if a tsunami watch has been issued.<br> 
+                    </p>
+            </div>
+            <button type="button" class="collapsible">What to do after a tsunami occurs</button>
+            <div class="content">
+                <p>
+                    1. Tell family and friends you're OK.<br>
+
+                    2. Keep tuned in to official information sources or local media.<br>
+                
+                    3. Don't assume the danger is over after the first wave. The next one might be bigger.<br>
+                
+                    4. Call authorities if someone needs to be rescued.<br>
+                
+                    5. Help people such as the elderly, infants and people with disabilities.<br>
+                
+                    6. Stay away from disaster zones and out of buildings that have water around them.<br>
+                
+                    7. Be cautious when re-entering buildings and cleaning up.
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>

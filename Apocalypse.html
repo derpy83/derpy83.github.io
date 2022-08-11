@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Page Title</title>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="../Assignment2/style/style.css">
+</head>
+<body>
+    <div class="BG4">
+        <div class="navbar">
+            <ul>
+                <li><a href="../Assignment2/Index.html">Home</a></li>
+                <li><a href="../Assignment2/Tsunami.html">Tsunami</a></li>
+                <li><a href="../Assignment2/Earthquake.html">Earthquake</a></li>
+                <li><a href="../Assignment2/Apocalypse.html">Apocalypse</a></li>
+            </ul>
+        </div>
+        <div class="box Content">
+            <button class="collapsible">What is an Apocalypse?</button>
+            <div class="content">
+                <p>Apocalypse is a literary genre in which a supernatural being reveals cosmic mysteries <br>or the future to a human intermediary.</p>
+            </div>
+            <button class="collapsible">What to do during an Apocalypse.</button>
+            <div class="content">
+                <p>
+                    1. Purify Water
+                    2. Prevent infection
+                    3. Generate power
+                    4. Grow food
+                    5. Drive tree-powered cars
+                    6. Restart a chemical industry
+                    7. Be scientific
+                </p>
+            </div>
+        </div>
+    </div>
+    <script>
+        var coll = document.getElementsByClassName("collapsible");
+        var i;
+        
+        for (i = 0; i < coll.length; i++) {
+          coll[i].addEventListener("click", function() {
+            this.classList.toggle("active");
+            var content = this.nextElementSibling;
+            if (content.style.maxHeight){
+              content.style.maxHeight = null;
+            } else {
+              content.style.maxHeight = content.scrollHeight + "px";
+            } 
+          });
+        }
+        </script>
+</body>
+</html>
